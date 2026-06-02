@@ -35,22 +35,22 @@ fun BottomNavigationBar(
     onNavigate: (AppScreen) -> Unit,
     modifier: Modifier = Modifier
 ) {
-    // Elegant Floating Pill container mirroring the screenshot
+    // Elegant Floating Pill container
     Box(
         modifier = modifier
             .fillMaxWidth()
-            .padding(horizontal = 24.dp)
-            .navigationBarsPadding(), // Account for bottom gesture bar notch
+            .navigationBarsPadding() // Account for bottom gesture bar notch
+            .padding(bottom = 16.dp), // Height cushion offset from very bottom
         contentAlignment = Alignment.BottomCenter
     ) {
         Surface(
             color = Color(0xFF1E2824), // Sleek obsidian/slate background
             shape = RoundedCornerShape(32.dp),
             modifier = Modifier
-                .fillMaxWidth()
+                .width(280.dp) // Centered pill width
                 .height(64.dp)
-                .shadow(12.dp, RoundedCornerShape(32.dp)),
-            tonalElevation = 8.dp
+                .shadow(16.dp, RoundedCornerShape(32.dp)),
+            tonalElevation = 12.dp
         ) {
             Row(
                 modifier = Modifier.fillMaxSize(),
