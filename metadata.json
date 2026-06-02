@@ -1,0 +1,6 @@
+{
+  "name": "Meal Planner",
+  "description": "A beautiful, Material 3-styled Meal Planning and Nutrition Tracking application offering comprehensive MVVM structures and fluid animations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
